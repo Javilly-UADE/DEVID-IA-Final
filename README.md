@@ -14,7 +14,7 @@ Responder las siguientes preguntas de forma clara y breve.
 
 1. Explicá qué problema resuelve un sistema de **Line of Sight** y qué elementos suelen intervenir en su implementación.
 
-2. Explicá una diferencia importante entre una **FSM** y un **Decision Tree** en videojuegos.
+2. Explicá una diferencia importante entre una **FSM** y un **Decision Tree**.
 
 3. Explicá la diferencia entre los Steering Behaviours **Seek**, **Pursue** y **Evade**.
 
@@ -32,12 +32,12 @@ Responder las siguientes preguntas de forma clara y breve.
 
 ## Parte práctica
 
-A partir del proyecto entregado, completar lo necesario para que el enemigo pueda encontrar y recorrer correctamente un camino dentro de la escena.
+Completar lo necesario para que el enemigo pueda encontrar y recorrer correctamente un camino dentro de la escena.
 
 ### Tareas
 
 - Configurar correctamente el **NodeManager** para que los nodos se generen de forma útil sobre la plataforma.
-- Completar la lógica necesaria en el **ExerciseManager** para que pueda utilizar correctamente los objetos de la escena.
+- Configurar correctamente el **ExerciseManager** para que pueda utilizar correctamente los objetos de la escena.
 - Revisar y completar la implementación de **Dijkstra**.
 - Lograr que el enemigo recorra correctamente el camino encontrado.
 - Hacer que el recorrido final respete la disposición de nodos y no atraviese obstáculos.
