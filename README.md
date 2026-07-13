@@ -1,114 +1,53 @@
 # Final Regular - Inteligencia Artificial en Videojuegos
 
+## Introducción
+
+En este repositorio se entrega una escena base en Unity con una plataforma, un jugador, un enemigo, uno o más obstáculos y una carpeta de scripts ya creada.
+
+El objetivo del examen es completar la parte teórica y resolver la parte práctica a partir de esta base.
+
+---
+
+## Parte teórica
+
+Responder las siguientes preguntas de forma clara y breve.
+
+1. Explicá qué problema resuelve un sistema de **Line of Sight** y qué elementos suelen intervenir en su implementación.
+
+2. Explicá una diferencia importante entre una **FSM** y un **Decision Tree** en videojuegos.
+
+3. Explicá la diferencia entre los Steering Behaviours **Seek**, **Pursue** y **Evade**.
+
+4. Explicá qué diferencia hay entre **BFS** y **DFS**. Indicá además cuál de los dos conviene más para encontrar un camino mínimo en un grafo sin peso y por qué.
+
+5. Explicá qué problema resuelve **Dijkstra** y en qué se diferencia de **BFS**.
+
+6. Explicá qué agrega **A\*** respecto de **Dijkstra** y qué rol cumple la **heurística**.
+
+7. Explicá qué mejora aporta **Theta\*** respecto de **A\***.
+
+8. Explicá qué es **Flocking** y nombrá sus tres reglas principales, indicando brevemente qué hace cada una.
+
+---
+
 ## Parte práctica
 
-En este ejercicio se entrega un proyecto base en Unity con una escena simple de navegación.
+A partir del proyecto entregado, completar lo necesario para que el enemigo pueda encontrar y recorrer correctamente un camino dentro de la escena.
 
-La escena contiene:
+### Tareas
 
-- un **Player**
-- un **Enemy**
-- una **plataforma**
-- uno o más **obstáculos**
-- un sistema de nodos generado automáticamente mediante un **NodeManager**
-- una base de código para trabajar con **Dijkstra**
-
-El objetivo del ejercicio es completar y corregir la lógica necesaria para que el enemigo pueda encontrar y recorrer un camino válido dentro de la escena.
+- Configurar correctamente el **NodeManager** para que los nodos se generen de forma útil sobre la plataforma.
+- Completar la lógica necesaria en el **ExerciseManager** para que pueda utilizar correctamente los objetos de la escena.
+- Revisar y completar la implementación de **Dijkstra**.
+- Lograr que el enemigo recorra correctamente el camino encontrado.
+- Hacer que el recorrido final respete la disposición de nodos y no atraviese obstáculos.
 
 ---
 
-## Objetivo general
+## Entrega esperada
 
-Lograr que el enemigo pueda:
+Al finalizar, el proyecto debería permitir que el enemigo:
 
-1. utilizar correctamente la red de nodos sobre la plataforma
-2. encontrar un camino desde un punto inicial hasta un punto objetivo usando **Dijkstra**
-3. recorrer correctamente el camino encontrado sin atravesar obstáculos
-
----
-
-## Lo que ya está hecho
-
-El proyecto ya incluye:
-
-- la escena base
-- el `NodeManager`
-- los nodos generados automáticamente
-- el prefab o script base de `Node`
-- un script base de `Dijkstra`
-- un agente que puede recorrer una lista de nodos
-- objetos de inicio y destino
-
----
-
-## Lo que deben hacer
-
-### 1. Configurar correctamente el NodeManager
-
-El proyecto incluye un `NodeManager`, pero su configuración no está terminada.
-
-Deben revisar y ajustar los parámetros necesarios para que los nodos se generen correctamente sobre la plataforma de la escena.
-
-Se espera que:
-
-- los nodos cubran el área útil de la plataforma
-- no aparezcan dentro de obstáculos
-- las conexiones entre nodos sean coherentes
-
----
-
-### 2. Revisar y completar la implementación de Dijkstra
-
-El proyecto incluye una base del algoritmo de **Dijkstra**, pero no está completamente funcional.
-
-Deben corregir o completar la lógica necesaria para que el algoritmo pueda:
-
-- recorrer nodos válidos
-- calcular correctamente los costos
-- elegir el siguiente nodo adecuado
-- reconstruir el camino final
-
----
-
-### 3. Lograr que el enemigo recorra correctamente el camino
-
-Una vez obtenido el camino, el enemigo debe poder seguirlo correctamente dentro de la escena.
-
-Se espera que:
-
-- avance nodo por nodo
-- llegue al objetivo
-- no atraviese obstáculos
-- no se quede detenido sin motivo
-
----
-
-## Qué se evalúa
-
-Se tendrá en cuenta:
-
-- correcta configuración y uso del `NodeManager`
-- implementación correcta de **Dijkstra**
-- reconstrucción correcta del camino
-- integración entre búsqueda y movimiento
-- funcionamiento general del sistema en la escena
-
----
-
-## Aclaraciones
-
-- No se pide implementar **A\*** ni **Theta\*** en esta parte práctica.
-- No se pide armar el proyecto desde cero.
-- No se pide modificar por completo la escena.
-- Se puede ajustar la configuración de nodos y revisar el código provisto.
-- El foco del ejercicio está en **navegación y pathfinding**.
-
----
-
-## Resumen rápido
-
-El objetivo es que el enemigo:
-
-- use una red de nodos válida
-- encuentre un camino con Dijkstra
-- recorra correctamente ese camino evitando la pared
+- utilice una red de nodos válida en la plataforma
+- encuentre un camino desde el punto inicial hasta el objetivo
+- recorra ese camino correctamente dentro de la escena
