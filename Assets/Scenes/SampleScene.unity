@@ -426,10 +426,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b3d3383e04c402880542272b84bb9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExerciseManager
-  nodeManager: {fileID: 1551625195}
-  startPoint: {fileID: 548002794}
-  goalPoint: {fileID: 735093299}
-  agent: {fileID: 780553841}
+  nodeManager: {fileID: 0}
+  startPoint: {fileID: 0}
+  goalPoint: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!4 &501551286
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,12 +1254,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3c21292d7bb4353b73cf8a2b442710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NodeManager
-  nodePrefab: {fileID: 1220633295044638763, guid: 0d77bcd0be075478b97cb68072c0601e, type: 3}
-  gridSize: {x: 50, y: 50}
+  nodePrefab: {fileID: 0}
+  gridSize: {x: 1, y: 1}
   spacing: 1.2
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   connectionRadius: 2.5
 --- !u!4 &1551625196
 Transform:
